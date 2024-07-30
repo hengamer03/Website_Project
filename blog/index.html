@@ -1,21 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hengamer.no</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="module">
+        import { EmojiCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+        new EmojiCursor();
+    </script>
 </head>
 <body>
-    <h1>Blog</h1>
-    <p>Her finner man en liten blog som beviser kompetanse. Vil hovedsakelig dokumentere ting jeg synes er kult her. .</p>
-</body>
-<body>
-    <header>
-        <h1>Go back to home</h1>
+    <header>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Velkommen til hengamer.no!</title>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="about/index.html">Om Meg</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-</html>
+    <h1>Velkommen til hengamer.no!</h1>
+    <p id="date" style="font-size: smaller;"></p>
 
+    <section id="home">
+        <h2>Home</h2>
+        <p>Velkommen til hengamer.no! Denne nettsiden vil fungere som et punkt der jeg kan vise egen kompetanse, og som en plass der jeg kan sette morsome ting for å lære meg HTML, CSS og kansje javascript!.</p>
+    </section>
+
+    <section id="about">
+        <h2>Om meg</h2>
+        <p>Jeg er en ung systemingeniør som har kompetanse innenfor Linux administrasjon fra Norge sin helsesektor. Dette innebærer også god kjenskap til automasjonverktøy som Puppet, Ansible, Terraform og nylig Kubernetes!. Les mer og dette på om meg siden.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Jeg jobber med å få opp en epostadresse som kan passe til kontakt, men er unner arbeid. per nå ligger det midlertidig her:</p>
+        <address>
+            Email: <a href="mailto:contact@testwebsite.com">contact@testwebsite.com</a><br>
+            Phone: +1234567890
+        </address>
+    </section>
+
+    <section id="My Links">
+        <h2>My Links</h2>
+        <p>Se Github Profilen min her</p>
+        <address>
+            Github: <a href="https://github.com/hengamer03">https://github.com/hengamer03 </a><br>
+        </address>
+    </section>
+    <img src="assets/images/tux.png" alt="Logo" class="small-image">
+    <footer>
+        <p>&copy; 2024 Test Website. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/time.js"></script>
+</body>
+</html>
