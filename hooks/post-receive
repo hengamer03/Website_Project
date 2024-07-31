@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Set the branch to deploy and the target directory
+BRANCH="test"
+TARGET_DIR="/var/www/html"
+
+while read oldrev newrev ref
+do
+    # Only deploy if the specified branch was pushed
+    if [[ $ref =~ .*/$BRANCH$ ]]; then
+        echo "Deploying branch '$BRANCH' to '$TARGET_DIR'"
+        GIT_WORK_TREE=$TARGET_DIR git checkout -f $BRANCH
+    fi
+done
