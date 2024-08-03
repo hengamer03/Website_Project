@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function enableDarkMode() {
-        themeStylesheet.href = 'assets/css/dark-mode.css';
+        themeStylesheet.href = '../css/dark-mode.css';
         localStorage.setItem('dark-mode', 'enabled');
     }
 
     function disableDarkMode() {
-        themeStylesheet.href = 'assets/css/light-mode.css';
+        themeStylesheet.href = '../css/light-mode.css';
         localStorage.setItem('dark-mode', 'disabled');
     }
 });
