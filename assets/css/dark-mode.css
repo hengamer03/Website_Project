@@ -1,17 +1,68 @@
+/* Dark mode styles */
+.small-image {
+    width: 200px;
+    height: 100px;
+}
+
 body {
-    background-color: #333;
-    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 h1, h2 {
-    color: #fff;
+    color: #E0E0E0; /* Light text color */
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-bottom: 20px;
 }
 
 .container {
-    background: #444;
-    color: #fff;
+    max-width: 800px;
+    margin: auto;
+    background: #1e1e1e; /* Dark container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted shadow for dark mode */
+    transition: background 0.3s, color 0.3s;
 }
 
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background: #555; /* Darker button background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #777; /* Slightly lighter on hover */
+}
+
+/* Link styles */
 a {
-    color: cornflowerblue;
+    color: #BB86FC; /* Light purple color */
+}
+
+a:hover {
+    color: #3700B3; /* Darker purple color */
+}
+
+a:visited {
+    color: #CF6679; /* Light red color */
+}
+
+a:active {
+    color: #03DAC6; /* Teal color */
 }
