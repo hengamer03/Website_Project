@@ -1,0 +1,12 @@
+site_name: hengamer.no
+site_url: https://hengamer.no
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - About: about.md
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
